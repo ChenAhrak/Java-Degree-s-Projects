@@ -1,0 +1,108 @@
+@BEGIN::COMMAND_1
+Successfully added IP: 10.0.0.4
+Successfully added IP: 10.0.0.3
+Failed to add new IP
+Successfully added IP: 10.0.1.4
+@END::COMMAND_1
+@BEGIN::COMMAND_2
+Successfully added server: IP:10.0.0.4 | Port:50
+Successfully added server: IP:10.0.0.4 | Port:80
+Successfully added server: IP:10.0.0.3 | Port:50
+Successfully added server: IP:10.0.0.3 | Port:80
+Successfully added server: IP:10.0.1.4 | Port:50
+Failed to add new server
+Successfully added server: IP:10.0.1.4 | Port:80
+@END::COMMAND_2
+@BEGIN::COMMAND_3
+Successfully added client: 192.168.1.1
+Successfully added client: 192.168.1.2
+Successfully added client: 192.168.2.1
+Successfully added client: 192.168.2.2
+Successfully added client: 192.168.3.1
+Successfully added client: 192.168.3.2
+Failed to add new client
+Successfully added client: 192.168.4.1
+Successfully added client: 192.168.4.2
+Successfully added client: 192.168.5.1
+Successfully added client: 192.168.5.2
+Successfully added client: 192.168.6.1
+Successfully added client: 192.168.6.2
+Successfully added client: 192.168.7.1
+Successfully added client: 192.168.7.2
+Successfully added client: 192.168.8.1
+Successfully added client: 192.168.8.2
+Successfully added client: 192.168.9.1
+Successfully added client: 192.168.9.2
+Successfully added client: 192.168.0.1
+@END::COMMAND_3
+@BEGIN::COMMAND_4
+Successfully added client: 192.168.1.1 to server: IP: 10.0.0.4 Port: 80
+Successfully added client: 192.168.1.2 to server: IP: 10.0.0.4 Port: 50
+Failed to add client to suggested server
+Successfully added client: 192.168.2.1 to server: IP: 10.0.0.3 Port: 80
+Successfully added client: 192.168.2.2 to server: IP: 10.0.0.3 Port: 50
+Successfully added client: 192.168.3.1 to server: IP: 10.0.1.4 Port: 80
+Successfully added client: 192.168.3.2 to server: IP: 10.0.1.4 Port: 50
+Successfully added client: 192.168.4.1 to server: IP: 10.0.0.4 Port: 80
+Successfully added client: 192.168.4.2 to server: IP: 10.0.0.4 Port: 50
+Failed to add client to suggested server
+Successfully added client: 192.168.5.1 to server: IP: 10.0.0.3 Port: 80
+Successfully added client: 192.168.5.2 to server: IP: 10.0.0.3 Port: 50
+Successfully added client: 192.168.6.1 to server: IP: 10.0.1.4 Port: 80
+Successfully added client: 192.168.6.2 to server: IP: 10.0.1.4 Port: 50
+Successfully added client: 192.168.7.1 to server: IP: 10.0.0.4 Port: 80
+Successfully added client: 192.168.7.2 to server: IP: 10.0.0.4 Port: 50
+Successfully added client: 192.168.8.1 to server: IP: 10.0.0.3 Port: 80
+Successfully added client: 192.168.8.2 to server: IP: 10.0.0.3 Port: 50
+Successfully added client: 192.168.9.1 to server: IP: 10.0.1.4 Port: 80
+Successfully added client: 192.168.9.2 to server: IP: 10.0.1.4 Port: 50
+Failed to add client to suggested server
+@END::COMMAND_4
+@BEGIN::COMMAND_5
+Failed to send message
+Send message for 10.0.0.4:80 from client 192.168.1.1 successfully.
+Send message for 10.0.0.3:80 from client 192.168.2.1 successfully.
+Failed to send message
+Send message for 10.0.0.3:50 from client 192.168.2.2 successfully.
+Send message for 10.0.1.4:80 from client 192.168.3.1 successfully.
+Send message for 10.0.1.4:50 from client 192.168.3.2 successfully.
+Send message for 10.0.0.4:80 from client 192.168.4.1 successfully.
+Send message for 10.0.0.4:50 from client 192.168.4.2 successfully.
+Failed to send message
+Send message for 10.0.0.3:50 from client 192.168.5.2 successfully.
+Failed to send message
+Send message for 10.0.1.4:80 from client 192.168.6.1 successfully.
+Send message for 10.0.1.4:50 from client 192.168.6.2 successfully.
+Send message for 10.0.0.4:80 from client 192.168.7.1 successfully.
+Send message for 10.0.0.4:50 from client 192.168.7.2 successfully.
+Send message for 10.0.0.3:80 from client 192.168.8.1 successfully.
+@END::COMMAND_5
+@BEGIN::COMMAND_6
+Failed to send message
+Send message for client 192.168.1.1 from server 10.0.0.4:80 successfully.
+Send message for client 192.168.2.1 from server 10.0.0.3:80 successfully.
+Send message for client 192.168.2.2 from server 10.0.0.3:50 successfully.
+Failed to send message
+Send message for client 192.168.3.1 from server 10.0.1.4:80 successfully.
+Send message for client 192.168.3.2 from server 10.0.1.4:50 successfully.
+Send message for client 192.168.4.1 from server 10.0.0.4:80 successfully.
+Failed to send message
+Failed to send message
+Send message for client 192.168.6.2 from server 10.0.1.4:50 successfully.
+Send message for client 192.168.7.1 from server 10.0.0.4:80 successfully.
+Send message for client 192.168.7.2 from server 10.0.0.4:50 successfully.
+Failed to send message
+@END::COMMAND_6
+@BEGIN::COMMAND_7
+getAllFailureMessageFromServer returns:
+1	Message [requestNumber=19, data=dontDnow, from=10.0.0.3:80, to=192.168.2.1, status=FAILURE]
+2	Message [requestNumber=28, data=0, from=10.0.0.4:50, to=192.168.7.2, status=FAILURE]
+@END::COMMAND_7
+@BEGIN::COMMAND_8
+getAllOnlineServer returns:
+1	Server [number=1, ip=10.0.0.4, port=50, clients=2, receivingRequest=[Message [requestNumber=8, data=1010101, from=192.168.4.2, to=10.0.0.4:50, status=PENDING], Message [requestNumber=15, data=http://IcanGetRequest, from=192.168.7.2, to=10.0.0.4:50, status=FAILURE]], respondRequests=[Message [requestNumber=28, data=0, from=10.0.0.4:50, to=192.168.7.2, status=FAILURE]]]
+2	Server [number=4, ip=10.0.0.3, port=80, clients=2, receivingRequest=[Message [requestNumber=3, data=111111111, from=192.168.2.1, to=10.0.0.3:80, status=FAILURE], Message [requestNumber=16, data=http://IcanGetRequest, from=192.168.8.1, to=10.0.0.3:80, status=PENDING]], respondRequests=[Message [requestNumber=19, data=dontDnow, from=10.0.0.3:80, to=192.168.2.1, status=FAILURE]]]
+3	Server [number=3, ip=10.0.0.3, port=50, clients=2, receivingRequest=[Message [requestNumber=4, data=100000000, from=192.168.2.2, to=10.0.0.3:50, status=SUCCESS], Message [requestNumber=10, data=ICansSeeYou, from=192.168.5.2, to=10.0.0.3:50, status=PENDING]], respondRequests=[Message [requestNumber=20, data=101010101, from=10.0.0.3:50, to=192.168.2.2, status=SUCCESS]]]
+4	Server [number=6, ip=10.0.1.4, port=80, clients=2, receivingRequest=[Message [requestNumber=5, data=101010101, from=192.168.3.1, to=10.0.1.4:80, status=SUCCESS], Message [requestNumber=12, data=hii, from=192.168.6.1, to=10.0.1.4:80, status=PENDING]], respondRequests=[Message [requestNumber=21, data=101010101, from=10.0.1.4:80, to=192.168.3.1, status=SUCCESS]]]
+5	Server [number=5, ip=10.0.1.4, port=50, clients=1, receivingRequest=[Message [requestNumber=6, data=10101010, from=192.168.3.2, to=10.0.1.4:50, status=SUCCESS], Message [requestNumber=13, data=http://hi, from=192.168.6.2, to=10.0.1.4:50, status=SUCCESS]], respondRequests=[Message [requestNumber=22, data=10101010, from=10.0.1.4:50, to=192.168.3.2, status=SUCCESS], Message [requestNumber=26, data=hii, from=10.0.1.4:50, to=192.168.6.2, status=SUCCESS]]]
+@END::COMMAND_8

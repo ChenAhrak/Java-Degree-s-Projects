@@ -1,0 +1,98 @@
+// add new IP addIP(ip);
+addIP  10.0.0.4
+addIP  10.0.0.3
+addIP  10.0.0.3
+addIP  10.0.1.4
+// ===============================================================================================================
+// add new Server addServerToIP(ip, port);
+addServerToIP 10.0.0.4 50
+addServerToIP 10.0.0.4 80
+addServerToIP 10.0.0.3 50
+addServerToIP 10.0.0.3 80
+addServerToIP 10.0.1.4 50
+addServerToIP 10.0.1.4 50
+addServerToIP 10.0.1.4 80
+// ===============================================================================================================
+// add new client addClient(ip);
+addClient 192.168.1.1
+addClient 192.168.1.2
+addClient 192.168.2.1
+addClient 192.168.2.2
+addClient 192.168.3.1
+addClient 192.168.3.2
+addClient 192.168.3.2
+addClient 192.168.4.1
+addClient 192.168.4.2
+addClient 192.168.5.1
+addClient 192.168.5.2
+addClient 192.168.6.1
+addClient 192.168.6.2
+addClient 192.168.7.1
+addClient 192.168.7.2
+addClient 192.168.8.1
+addClient 192.168.8.2
+addClient 192.168.9.1
+addClient 192.168.9.2
+addClient 192.168.0.1
+// ===============================================================================================================
+// connect client to server connectClientToServer(ipClient);
+connectClientToServer 192.168.1.1
+connectClientToServer 192.168.1.2
+connectClientToServer 192.168.1.2
+connectClientToServer 192.168.2.1
+connectClientToServer 192.168.2.2
+connectClientToServer 192.168.3.1
+connectClientToServer 192.168.3.2
+connectClientToServer 192.168.4.1
+connectClientToServer 192.168.4.2
+connectClientToServer 192.168.0.0
+connectClientToServer 192.168.5.1
+connectClientToServer 192.168.5.2
+connectClientToServer 192.168.6.1
+connectClientToServer 192.168.6.2
+connectClientToServer 192.168.7.1
+connectClientToServer 192.168.7.2
+connectClientToServer 192.168.8.1
+connectClientToServer 192.168.8.2
+connectClientToServer 192.168.9.1
+connectClientToServer 192.168.9.2
+connectClientToServer 192.168.0.1
+// ===============================================================================================================
+// send message to server from client sendMessageByClient(number,clientIp,serverIP,serverPort,data);
+sendMessageByClient 001 192.168.1.1 10.0.0.4 50 101111010
+sendMessageByClient 002 192.168.1.1 10.0.0.4 80 101111010
+sendMessageByClient 003 192.168.2.1 10.0.0.3 80 111111111
+sendMessageByClient 003 192.168.2.1 10.0.0.3 80 111111111
+sendMessageByClient 004 192.168.2.2 10.0.0.3 50 100000000
+sendMessageByClient 005 192.168.3.1 10.0.1.4 80 101010101
+sendMessageByClient 006 192.168.3.2 10.0.1.4 50 010101010
+sendMessageByClient 007 192.168.4.1 10.0.0.4 80 001100110
+sendMessageByClient 008 192.168.4.2 10.0.0.4 50 001010101
+sendMessageByClient 009 192.168.5.1 10.0.0.4 50 hii
+sendMessageByClient 010 192.168.5.2 10.0.0.3 50 ICansSeeYou
+sendMessageByClient 011 192.168.0.0 10.0.0.4 50 hii
+sendMessageByClient 012 192.168.6.1 10.0.1.4 80 hii
+sendMessageByClient 013 192.168.6.2 10.0.1.4 50 http://hi
+sendMessageByClient 014 192.168.7.1 10.0.0.4 80 http://IcanSeeYou
+sendMessageByClient 015 192.168.7.2 10.0.0.4 50 http://IcanGetRequest
+sendMessageByClient 016 192.168.8.1 10.0.0.3 80 http://IcanGetRequest
+// ===============================================================================================================
+// send message to client from server sendMessageByServer(number, serverIP, serverPort, clientIp,respondNumMessage,data);
+sendMessageByServer 017 10.0.0.4 50 192.168.1.1 001 101111010
+sendMessageByServer 018 10.0.0.4 80 192.168.1.1 002 111111111
+sendMessageByServer 019 10.0.0.3 80 192.168.2.1 003 dontDnow
+sendMessageByServer 020 10.0.0.3 50 192.168.2.2 004 101010101
+sendMessageByServer 020 10.0.0.3 50 192.168.2.2 004 100000000
+sendMessageByServer 021 10.0.1.4 80 192.168.3.1 005 101010101
+sendMessageByServer 022 10.0.1.4 50 192.168.3.2 006 010101010
+sendMessageByServer 023 10.0.0.4 80 192.168.4.1 007 001100110
+sendMessageByServer 024 10.0.0.4 50 192.168.0.0 011 IamListen
+sendMessageByServer 025 10.0.0.4 50 192.168.4.2 012 001010101
+sendMessageByServer 026 10.0.1.4 50 192.168.6.2 013 hii
+sendMessageByServer 027 10.0.0.4 80 192.168.7.1 014 yesYouCan
+sendMessageByServer 028 10.0.0.4 50 192.168.7.2 015 000000000
+sendMessageByServer 029 10.0.1.4 80 192.168.6.1 016 No
+// ===============================================================================================================
+getAllFailureMessageFromServer
+// ===============================================================================================================
+getAllOnlineServer
